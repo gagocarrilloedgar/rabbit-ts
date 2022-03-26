@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+cd auth && chmod +x ./.husky/pre-commit 
+cd ../notification && chmod +x ./.husky/pre-commit

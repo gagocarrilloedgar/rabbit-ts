@@ -1,0 +1,23 @@
+{
+  "name": "rabbit-ts-auth",
+  "version": "1.0.0",
+  "description": "A simple event-based server sugar rabbitMQ, TS and docker",
+  "main": "index.js",
+  "author": "Edgar Gago Carrillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gagocarrilloedgar/rabbit-ts/issues"
+  },
+  "homepage": "https://github.com/gagocarrilloedgar/rabbit-ts#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gagocarrilloedgar/rabbit-ts.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4"
+  }
+}
