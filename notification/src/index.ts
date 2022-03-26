@@ -5,6 +5,7 @@ import createMQConsumer from './consumer'
 
 import { AMQP_URL, QUEUE_NAME, PORT } from './config'
 
+// parse application/json
 const app = express()
 const consumer = createMQConsumer(AMQP_URL, QUEUE_NAME)
 

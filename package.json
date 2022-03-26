@@ -14,10 +14,20 @@
     "url": "git+https://github.com/gagocarrilloedgar/rabbit-ts.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7"
+  },
+  "lint-staged": {
+    "notification/src/**/*.ts": [
+      "cd notification && npm run lint:fix",
+      "cd notification && npm run prettier:fix"
+    ],
+    "auth/src/**/*.ts": [
+      "cd auth && npm run lint:fix",
+      "cd auth && npm run prettier:fix"
+    ]
   }
 }

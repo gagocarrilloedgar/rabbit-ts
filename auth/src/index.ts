@@ -7,6 +7,8 @@ import createMQProducer from './producer'
 const producer = createMQProducer(AMQP_URL, QUEUE_NAME)
 
 const app = express()
+
+// parse application/json
 app.use(bodyParser.json())
 
 app.post('/register', async (req: Request, res: Response) => {

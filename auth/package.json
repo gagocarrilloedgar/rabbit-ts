@@ -13,12 +13,6 @@
     "prettier": "prettier --check ./src/**/*.ts",
     "prettier:fix": "prettier --write src"
   },
-  "lint-staged": {
-    "src/**/*.ts": [
-      "npm run lint:auth",
-      "npm run prettier:auth"
-    ]
-  },
   "author": "Edgar Gago Carrrillo",
   "license": "MIT",
   "devDependencies": {

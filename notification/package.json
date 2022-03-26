@@ -13,12 +13,6 @@
     "prettier": "prettier --check ./src/**/*.ts",
     "prettier:fix": "prettier --write src"
   },
-  "lint-staged": {
-    "src/**/*.ts": [
-      "npm run lint:auth",
-      "npm run prettier:auth"
-    ]
-  },
   "author": "Edgar Gago Carrillo",
   "license": "MIT",
   "devDependencies": {
@@ -33,7 +27,6 @@
     "eslint-plugin-promise": "^5.2.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
-    "lint-staged": "^12.3.7",
     "nodemon": "^2.0.15",
     "ts-node": "^10.7.0",
     "tsconfig": "^7.0.0",
